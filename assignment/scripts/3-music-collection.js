@@ -36,4 +36,7 @@ function showCollection(array){
         console.log(array[i].title, 'by', array[i].artist + ', published in', array[i].yearPublished)
     }
 }
+// function call to test
 console.table(showCollection(collection))
+
+// function to find songs by artist
