@@ -37,6 +37,22 @@ function showCollection(array){
     }
 }
 // function call to test
-console.table(showCollection(collection))
+console.log(showCollection(collection))
 
 // function to find songs by artist
+function findByArtist(artist){
+    let foundSongs = [];
+    for (let i = 0; i<collection.length; i++){
+       // console.log('in findByArtist for loop')
+        if (artist === collection[i].artist){
+            //console.log('in findByArtist if statement')
+            foundSongs.push(collection[i])
+        }
+    }
+    return foundSongs
+}
+
+// function call to test findByArtist
+console.log(findByArtist('you'))
+console.log(findByArtist('let'))
+console.log(findByArtist('book'))
